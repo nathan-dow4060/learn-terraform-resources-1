@@ -17,4 +17,4 @@ resource "aws_instance" "web" {
   tags = {
     Name = random_pet.name.id
   }
-}
+} 
