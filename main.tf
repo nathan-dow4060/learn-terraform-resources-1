@@ -21,7 +21,7 @@ resource "aws_instance" "web" {
   }
 } 
 
-resource "aws_security_group" "web" {
+resource "aws_security_group" "web-sg" {
   name = "${random_pet.name.id}-sg"
   ingress {
     from_port = 80
